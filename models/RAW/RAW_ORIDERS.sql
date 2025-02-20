@@ -5,4 +5,4 @@
 }}
 
 select * 
-from RAW.GLOBALEMART.ORDERS
+from {{ source('GLOBALEMART','orders') }}
