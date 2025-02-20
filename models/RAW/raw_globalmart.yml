@@ -10,4 +10,9 @@ models:
           - unique
           - not_null
         
-          
+  - name : RAW_ORDERS
+    columns :
+       - name : orderid
+         tests:
+          - unique
+          - not_null
