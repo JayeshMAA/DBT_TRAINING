@@ -1,0 +1,12 @@
+select
+    productid,
+    PRODUCTNAME,
+    CATEGORY,
+    SUBCATEGORY,
+SUm(ORDER_PROFIT) AS PRODUCT_PROFIT
+FROM {{ ref('ORDERS_STAGE') }}
+GROUP BY 
+    productid,
+    PRODUCTNAME,
+    CATEGORY,
+    SUBCATEGORY
