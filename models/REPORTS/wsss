@@ -1,8 +1,7 @@
 with
 orders as (
-select * from {{ ref('raw_orders') }}
+select * from {{ ref('RAW_ORIDERS') }}
 )
-Course Notes 6
 select orderid,
 sum(ordersellingprice) as total_sp
 from orders
